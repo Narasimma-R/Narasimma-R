@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>webtechnology</display-name>
+  <welcome-file-list>
+  <welcome-file>myProject.html</welcome-file>
+  <welcome-file>profile.jsp</welcome-file>
+  <welcome-file>service.html></welcome-file>
+  <welcome-file>login.html></welcome-file>
+  <welcome-file>index.jsp</welcome-file>
+  <welcome-file>forgotPass.html</welcome-file>
+  <welcome-file>singup.html</welcome-file>
+  <welcome-file>loginCheck.java</welcome-file>
+   <welcome-file>loginServlet.java</welcome-file>
+  </welcome-file-list>
+</web-app>

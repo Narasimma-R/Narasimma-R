@@ -1,0 +1,118 @@
+.container{
+  position: absolute;
+  margin-top: 0%;
+  top: 8px;
+  left:550px ;
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+  margin-left: 20px;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  text-decoration: solid;
+}
+.from{
+  position: absolute;
+  top: 50%;
+  left: 30.5%;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 30px;
+}
+.from:hover{
+  filter: drop-shadow(5px 5px 5px black);
+}
+#From{
+  padding: 10px;
+  border-radius: 1%;
+  border-radius: 15px;
+}
+#To{
+  padding: 10px;
+  border-radius: 1%;
+  border-radius: 15px;
+}
+#about{
+  margin-top: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ADD8E6;
+  border-radius: 15px;
+}
+#about h2{
+  margin-left: 5px;
+}
+#about p{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.cards h1{
+  padding-top: 150px;
+  margin-left: 35%;
+}
+.cards{
+  padding-left: 15%;
+}
+.card {
+  border-top-right-radius:41px;
+  border-top-left-radius: 41px;
+background: #FFFFFF;
+box-shadow:  15px 15px 15px black,
+             -21px -21px 42px #ffffff;
+  position: relative;
+  width: 300px;
+
+}
+.image {
+  display: block;
+}
+.card-text{
+  margin-left: 5px ;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-top-right-radius:41px;
+  border-top-left-radius: 41px;
+}
+
+.card:hover .overlay {
+  height: 100%;
+}
+button{
+  border-radius: 25px;
+  background-color: white;
+  padding: 3%;
+  color: black;
+  margin-left: 5px;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  border-top-right-radius:41px;
+  border-top-left-radius: 41px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myProject.css">
+    <link rel="icon" href="OIP.png">
+    <script src="button.js"></script>
+    <title>Marco Polo Airlines</title>
+</head>
+<body>
+    <div>
+    <img src="air.jpg" width="100%" height="500px" style="margin-top: 0%;margin-left: 0%;margin-right: 0%;">
+    <div class="container">
+      <ul>
+          <li><a href="myProject.html"><img src="OIP.png" width="50px" height="50px"></a></a></li>
+          <li style="margin-top: 1%;" class="sample"><a href="profile.jsp">Profile</a></li>
+          <li style="margin-top: 1%;" class="sample"><a href="service.html">Service</a></li>
+          <li style="margin-top: 1%;" class="sample"><a href="login.html">Login</a></li>
+          <li style="margin-top: 1%;"><a href="#about">About Us</a></li>
+      </ul>
+  </div> 
+    <div class="from">
+     <Button style="border: none;"><h4>Book Flights</h4></Button><button style="border: none;"><h4 style="margin-left:260%;margin-top: -8%;">CheckStatus</h4></button><br><br>
+        <ul>
+            <li><label for="From" style="margin-left: 5px;">From</label><br><input type="text" id="From" autofocus></li>
+            <li style="margin-top: 15px;margin-left: 5px"><button onclick="swap()" style="border: none;"><img src="transfer.png" height="50px" width="50px"></button></li> 
+            <li><label for="To" style="margin-left: 5px;">To</label><br><input type="text" id="To"></li>
+        </ul>
+    </div>
+</div>
+<div class="cards">
+  <h1 style="margin-top: 5%;margin-bottom: 20px; margin-left: 27%;">Currently Avilable Airlines</h1>
+  <ul>
+  <li><div class="card" style="margin-left:-20px">
+    <img src="Air_Asia.svg" height="300px" width="300px" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+      <h3 class="card-text">Book your flight at Air Asia</h3>
+      <button onclick="booknow()" style="cursor: pointer;">Book now</button><button style="cursor: pointer;">Check Flight</button>
+    </div>
+  </div>
+  </div></li>
+  <li><div class="card" style="left:60px">
+    <img src="British_Airways.svg" height="300px" width="300px" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+      <h3 class="card-text">Book your flight at British Airways</h3>
+      <button onclick="booknow()" style="cursor: pointer;">Book now</button><button style="cursor: pointer;">Check Flight</button>
+    </div>
+  </div>
+</div></li>
+<li><div class="card" style="left:120px">
+  <img src="qatar-air-ways-seeklogo.svg" height="300px" width="300px" alt="Avatar" class="image">
+<div class="overlay">
+  <div class="text">
+    <h3 class="card-text">Book your flight at qatar Airways</h3>
+    <button onclick="booknow()" style="cursor: pointer;">Book now</button><button style="cursor: pointer;">Check Flight</button>
+  </div>
+</div>
+</div></li>
+</div>
+<div id="about">
+    <h2>About Us</h2>
+    <P>The airline flies to destination cities all over the world from its main hub located in Indira Gandhi International Airport (DEL), Chhatrapati Shivaji Maharaj International Airport (BOM), Hyderabad Airport (HYD). The airline flies to Indonesia, Malaysia, Thailand, and Some destinations that the airlines fly to are Kuala Lumpur, Singapore, Bangkok.
+<br><br>
+The head office for the airline is located in India. Marco Polo is a part of Star Alliance.</P>
+    <h2>Contact Us</h2>
+    <p class="Contact">Phone : +91 9876543210<br>Mail To: <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZcqWfmnBrjhsVWsKwzwpbBsmdkFTkHvSQJMrQvSLjbtcSRNMzbzJfDdQrtLxjqrMWPwXv" target="_blank">indianairways@gmail.com</a></p>
+</div>
+</body>
+<script>
+  function swap()
+  {
+    var from=document.getElementById('From').value;
+    var to=document.getElementById('To').value;
+    document.getElementById("From").value=from;
+    document.getElementById("To").value=to;
+  }
+  </script>
+</html>

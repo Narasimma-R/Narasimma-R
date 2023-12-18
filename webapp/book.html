@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Marco Polo Airlines | Book</title>
+		<link rel="icon" href="OIP.jpeg">
+	</head>
+	<script>
+        function book(item) {
+            const cart = document.getElementById('cart');
+            const li = document.createElement('li');
+            li.className = 'cart-item';
+            li.innerHTML = `
+                <span>${item}</span>
+                <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+            `;
+            cart.appendChild(li);
+        }
+
+        function removeItem(button) {
+            const item = button.parentNode;
+            const cart = item.parentNode;
+            cart.removeChild(item);
+        }
+    </script>
+	<style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .white-box {
+            width: 400px;
+            height: 700px;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke; 
+            padding: 20px;
+            border-radius: 15%;
+            margin-top: 5%;
+            margin-left: -20%;
+        }
+        button{
+			padding: 15px;
+			border-radius: 25%;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: rgb(47, 250, 31);
+		}
+		li{
+			list-style: none;
+			display: inline;
+		}
+		.leftside{
+			margin-left: 0%;
+		}
+		.rightside{
+			margin-left:50%;
+			margin-top:-12%;
+		}
+    </style>
+</head>
+<body>
+<form>
+	<h1 style="margin-left: 650px;font-family: 'Times New Roman';margin-top: 0%;">Book your seat here</h1>
+	<form action="bookservlet.java" method="post"></form>
+    <div class="white-box">
+        <div class="left_side">
+			<form action="book" method="post" >
+    <ul>
+<li><button name="seat" value="1" onclick="book(1)" ></button></li>
+<li><button name="seat" value="2" onclick="book(2)" ></button></li>
+<li><button name="seat" value="3" onclick="book(3)" ></button></li>
+</ul></form>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="4" onclick="book(4)" ></button></li>
+<li><button name="seat" value="5" onclick="book(5)" ></button></li>
+<li><button name="seat" value="6" onclick="book(6)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="7" onclick="book(7)" ></button></li>
+<li><button name="seat" value="8" onclick="book(8)" ></button></li>
+<li><button name="seat" value="9" onclick="book(9)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="10" onclick="book(10)" ></button></li>
+<li><button name="seat" value="11" onclick="book(11)" ></button></li>
+<li><button name="seat" value="13" onclick="book(12)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="14" onclick="book(13)" ></button></li>
+<li><button name="seat" value="15" onclick="book(14)" ></button></li>
+<li><button name="seat" value="16" onclick="book(15)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="17" onclick="book(16)" ></button></li>
+<li><button name="seat" value="18" onclick="book(17)" ></button></li>
+<li><button name="seat" value="19" onclick="book(18)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="20" onclick="book(19)" ></button></li>
+<li><button name="seat" value="21" onclick="book(20)" ></button></li>
+<li><button name="seat" value="22" onclick="book(21)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="23" onclick="book(22)" ></button></li>
+<li><button name="seat" value="24" onclick="book(23)" ></button></li>
+<li><button name="seat" value="25" onclick="book(24)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="26" onclick="book(25)" ></button></li>
+<li><button name="seat" value="27" onclick="book(26)" ></button></li>
+<li><button name="seat" value="28" onclick="book(27)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="29" onclick="book(28)" ></button></li>
+<li><button name="seat" value="30" onclick="book(29)" ></button></li>
+<li><button name="seat" value="31" onclick="book(30)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="32" onclick="book(31)" ></button></li>
+<li><button name="seat" value="33" onclick="book(32)" ></button></li>
+<li><button name="seat" value="34" onclick="book(33)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="35" onclick="book(33)" ></button></li>
+<li><button name="seat" value="36" onclick="book(34)" ></button></li>
+<li><button name="seat" value="37" onclick="book(35)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="38" onclick="book(36)" ></button></li>
+<li><button name="seat" value="39" onclick="book(37)" ></button></li>
+<li><button name="seat" value="40" onclick="book(38)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="41" onclick="book(39)" ></button></li>
+<li><button name="seat" value="42" onclick="book(40)" ></button></li>
+<li><button name="seat" value="43" onclick="book(41)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="44" onclick="book(42)" ></button></li>
+<li><button name="seat" value="45" onclick="book(43)" ></button></li>
+<li><button name="seat" value="46" onclick="book(44)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="47" onclick="book(45)" ></button></li>
+<li><button name="seat" value="48" onclick="book(46)" ></button></li>
+<li><button name="seat" value="49" onclick="book(47)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="50" onclick="book(48)" ></button></li>
+<li><button name="seat" value="51" onclick="book(49)" ></button></li>
+<li><button name="seat" value="52" onclick="book(50)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="53" onclick="book(51)" ></button></li>
+<li><button name="seat" value="54" onclick="book(52)" ></button></li>
+<li><button name="seat" value="55" onclick="book(53)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="56" onclick="book(54)" ></button></li>
+<li><button name="seat" value="57" onclick="book(55)" ></button></li>
+<li><button name="seat" value="58" onclick="book(56)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="59" onclick="book(57)" ></button></li>
+<li><button name="seat" value="60" onclick="book(58)" ></button></li>
+<li><button name="seat" value="61" onclick="book(59)" ></button></li>
+</ul>
+</div>
+<div class="left_side">
+    <ul>
+<li><button name="seat" value="62" onclick="book(60)" ></button></li>
+<li><button name="seat" value="63" onclick="book(61)" ></button></li>
+<li><button name="seat" value="64" onclick="book(62)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="65" onclick="book(63)" ></button></li>
+<li><button name="seat" value="66" onclick="book(64)" ></button></li>
+<li><button name="seat" value="67" onclick="book(65)" ></button></li>
+</ul>
+</div><div class="left_side">
+    <ul>
+<li><button name="seat" value="68" onclick="book(66)" ></button></li>
+<li><button name="seat" value="69" onclick="book(67)" ></button></li>
+<li><button name="seat" value="70" onclick="book(68)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="71" onclick="book(69)" ></button></li>
+<li><button name="seat" value="72" onclick="book(70)" ></button></li>
+<li><button name="seat" value="73" onclick="book(71)" ></button></li>
+</ul>
+</div><div class="left_side">
+    <ul>
+<li><button name="seat" value="74" onclick="book(72)" ></button></li>
+<li><button name="seat" value="75" onclick="book(73)" ></button></li>
+<li><button name="seat" value="76" onclick="book(74)" ></button></li>
+</ul>
+</div>
+<div class="rightside">
+    <ul>
+<li><button name="seat" value="77" onclick="book(75)"></button></li>
+<li><button name="seat" value="78" onclick="book(76)"></button></li>
+<li><button name="seat" value="79" onclick="book(77)"></button></li>
+</ul>
+</div>
+</div>
+    </form>
+	</body>
+</html>
